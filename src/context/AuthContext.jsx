@@ -70,6 +70,7 @@ export const AuthProvider = ({ children }) => {
   const value = {
     user,
     loading,
+    isLoading: loading,
     login,
     register,
     logout,

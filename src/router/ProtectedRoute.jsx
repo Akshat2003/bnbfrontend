@@ -25,12 +25,12 @@ const ProtectedRoute = ({ children, requiredRole = null }) => {
   if (requiredRole && user.role !== requiredRole) {
     // Redirect based on user's actual role
     const redirectMap = {
-      user: '/dashboard',
+      user: '/user/dashboard',
       owner: '/owner/dashboard',
       admin: '/admin/dashboard',
     };
 
-    return <Navigate to={redirectMap[user.role] || '/dashboard'} replace />;
+    return <Navigate to={redirectMap[user.role] || '/user/dashboard'} replace />;
   }
 
   // All checks passed - render children

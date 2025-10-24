@@ -25,3 +25,7 @@ export { default as Modal } from './molecules/Modal';
 export { default as SearchBar } from './molecules/SearchBar';
 export { default as Pagination } from './molecules/Pagination';
 export { default as Dropdown, DropdownItem, DropdownDivider } from './molecules/Dropdown';
+export { default as ParkingSpaceCard } from './molecules/ParkingSpaceCard';
+export { default as FilterPanel } from './molecules/FilterPanel';
+export { default as ImageGallery } from './molecules/ImageGallery';
+export { default as ReviewsList } from './molecules/ReviewsList';

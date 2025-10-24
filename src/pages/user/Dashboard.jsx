@@ -1,6 +1,6 @@
 import { useAuth } from '@context/AuthContext';
 import { Card } from '@components/common';
-import { FiCalendar, FiCar, FiCreditCard, FiMapPin } from 'react-icons/fi';
+import { FiCalendar, FiTruck, FiCreditCard, FiMapPin } from 'react-icons/fi';
 
 const UserDashboard = () => {
   const { user } = useAuth();
@@ -16,7 +16,7 @@ const UserDashboard = () => {
     {
       label: 'My Vehicles',
       value: '2',
-      icon: <FiCar className="w-6 h-6" />,
+      icon: <FiTruck className="w-6 h-6" />,
       color: 'text-green-600',
       bg: 'bg-green-100',
     },

@@ -1,4 +1,4 @@
-import { format, formatDistance, formatRelative, parseISO, isValid } from 'date-fns';
+import { format, formatDistance as formatDateDistance, formatRelative, parseISO, isValid } from 'date-fns';
 
 // Date formatters
 export const formatDate = (date, formatStr = 'MMM dd, yyyy') => {
@@ -14,7 +14,7 @@ export const formatDateTime = (date) => {
 export const formatTimeAgo = (date) => {
   if (!date) return '';
   const parsedDate = typeof date === 'string' ? parseISO(date) : date;
-  return isValid(parsedDate) ? formatDistance(parsedDate, new Date(), { addSuffix: true }) : '';
+  return isValid(parsedDate) ? formatDateDistance(parsedDate, new Date(), { addSuffix: true }) : '';
 };
 
 export const formatRelativeTime = (date) => {
